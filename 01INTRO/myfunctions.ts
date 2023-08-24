@@ -9,8 +9,9 @@ function addTwo(num) {
 addTwo(5);
 
 // todo: case :2
-function addThree(num: number) {
+function addThree(num: number): number {
   return num + 3;
+  //return "Hello"; //*In this case we can define the type of function. As a result it will also check the type of the return value of that/ this function
 }
 addThree(5);
 
@@ -41,5 +42,18 @@ let loginUser = (name: string, email: string, isPaid: boolean = false) => {
 };
 
 loginUser("Jawad", "jd@jj.com");
+
+// how to define the fn type in a arrow fn?
+const getHello = (s: string): string => {
+  return "";
+};
+
+// another important case
+
+const heros = ["Thor", "Rocket", "Thanos"];
+heros.map((hero): string => {
+  // in this case the :string actually checks the type of this function and tells that it has to return a string not anyother results
+  return `Hero is ${hero}`;
+});
 
 export {};

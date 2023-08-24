@@ -22,3 +22,5 @@ It is redundent to write the type when declaring a number, because typescript is
 What is the best practice of type any? [video](https://www.youtube.com/watch?v=30LWjhZzg50&t=2812s)
 
 ## How functions are defined in Ts
+
+[A better way to write function](https://www.youtube.com/watch?v=30LWjhZzg50&t=3775s)
