@@ -12,7 +12,34 @@ addTwo(5);
 function addThree(num: number) {
   return num + 3;
 }
-
 addThree(5);
+
+// todo: case:3
+function getUpperCase(val: string) {
+  return val.toUpperCase();
+}
+getUpperCase("jawad");
+
+// todo: case:4
+function signUp(name: string, email: string, isPaid: boolean) {
+  return {
+    name: name,
+    email: email,
+    paid: isPaid,
+  };
+}
+signUp("jawad", "jawad@dev.co", false);
+
+// todo: case:5 -> arrow function
+// if we don't pass the default value in isPaid it will show error while passing as argument
+let loginUser = (name: string, email: string, isPaid: boolean = false) => {
+  return {
+    name: name,
+    email: email,
+    paid: isPaid,
+  };
+};
+
+loginUser("Jawad", "jd@jj.com");
 
 export {};

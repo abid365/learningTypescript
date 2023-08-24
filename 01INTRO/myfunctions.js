@@ -11,3 +11,17 @@ function addThree(num) {
     return num + 3;
 }
 addThree(5);
+// todo: case:3
+function getUpperCase(val) {
+    return val.toUpperCase();
+}
+getUpperCase("jawad");
+// todo: case:4
+function signUp(name, email, isPaid) {
+    return {
+        name: name,
+        email: email,
+        paid: isPaid,
+    };
+}
+signUp("jawad", "jawad@dev.co", false);
