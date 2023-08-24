@@ -9,6 +9,7 @@ addTwo(5);
 // todo: case :2
 function addThree(num) {
     return num + 3;
+    //return "Hello"; //*In this case we can define the type of function. As a result it will also check the type of the return value of that/ this function
 }
 addThree(5);
 // todo: case:3
@@ -25,3 +26,24 @@ function signUp(name, email, isPaid) {
     };
 }
 signUp("jawad", "jawad@dev.co", false);
+// todo: case:5 -> arrow function
+// if we don't pass the default value in isPaid it will show error while passing as argument
+var loginUser = function (name, email, isPaid) {
+    if (isPaid === void 0) { isPaid = false; }
+    return {
+        name: name,
+        email: email,
+        paid: isPaid,
+    };
+};
+loginUser("Jawad", "jd@jj.com");
+// how to define the fn type in a arrow fn?
+var getHello = function (s) {
+    return "";
+};
+// another important case
+var heros = ["Thor", "Rocket", "Thanos"];
+heros.map(function (hero) {
+    // in this case the :string actually checks the type of this function and tells that it has to return a string not anyother results
+    return "Hero is ".concat(hero);
+});
