@@ -56,4 +56,15 @@ heros.map((hero): string => {
   return `Hero is ${hero}`;
 });
 
+// console error
+function consoleError(errmsg: string): void {
+  console.log(errmsg); //if I want to return nothing, it is better to define the void type if this function
+}
+
+//handling Error
+function handleError(errmsg: string) {
+  //todo:best practice -> As it will handle the error , it will not be avoid. Instead it will be never , because sometimes a functions neither return void or a value. It is basically used for error handling
+  throw new Error(errmsg);
+}
+
 export {};
