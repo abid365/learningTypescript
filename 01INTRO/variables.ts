@@ -1,7 +1,9 @@
 let greetings: string = "Hello Jawad";
-
-let mynum = 7;
-
 console.log(greetings);
+// number
+let userId: number = 33445.655;
+
+// boolean
+let isLoogedin: boolean = false;
 
 export {};
