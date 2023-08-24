@@ -4,7 +4,7 @@
 
 ---
 
-> **Interview Question:** How do we define integers or floats in typescript?
+> **Interview Question:** ==How do we define integers or floats in typescript?==
 > [^1]:Hint: We don't need to define, integers and float everything is just number
 
 ---
